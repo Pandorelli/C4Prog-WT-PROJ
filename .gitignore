@@ -1,1 +1,6 @@
 /node_modules/
+/idea/
+/Evidence/
+
+package-lock.json
+package.json
