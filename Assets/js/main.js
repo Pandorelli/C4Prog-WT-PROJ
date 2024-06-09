@@ -7,6 +7,13 @@ window.addEventListener('load',() => {
     resizeIFrameToFitContent(iframe);
 })
 
+//Listen for loading of iframe and call resize function
+document.querySelector("iframe").onload = function() {
+    let iframe = document.querySelector("iframe");
+
+    resizeIFrameToFitContent(iframe);
+}
+
 //Function resizes the existing iframe to fit the html page loaded.
 function resizeIFrameToFitContent( iframe ) {
     iframe.width = iframe.contentWindow.document.body.offsetWidth + 50;
